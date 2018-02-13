@@ -1,4 +1,8 @@
-{{#each pet}}
-<h2>{{name}}</h2>
+<ol>
+{{#each sibling}}
+	{{#if name}}
+	<li><h2>{{name}} {{age}}</h2></li>
+	{{/if}}
+	{{#unless name}}{{age}}{{/unless}}
 {{/each}}
-
+</ol>
